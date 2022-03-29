@@ -5,9 +5,6 @@ const { save } = require("sequelize");
 // Ejemplo: const authRouter = require('./auth.js');
 const router = Router();
 const { Dog, Temperament } = require("../db");
-// const { getAllInfo, getDBInfo, getAPIinfo } = require("./ApiDBInfo.js");
-// const getAllInfo2 = getAllInfo;
-// const getAPIinfo3 = getAPIinfo; //PREGUNTAR A GABY PARA ORDENAR.
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 const getAPIinfo = async () => {

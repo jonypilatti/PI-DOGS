@@ -103,7 +103,6 @@
 }
 #Create {
   background-color: rgba(228, 138, 78, 0.94);
-  color: rgba(255, 255, 255, 0.864);
   padding: 5px;
   border-radius: 60%;
   border: none;
@@ -113,6 +112,11 @@
   color: rgb(248, 196, 98);
   text-shadow: 2px 2px 2px black;
   box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+}
+#Create:hover {
+  transform: scale(105%);
+  color: red;
+  transition: 0.5s;
 }
 
 @media (max-width: 300px) {

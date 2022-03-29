@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Nav from "../Nav/nav.jsx";
 import gif from "../../../img/GIFCARGA.gif";

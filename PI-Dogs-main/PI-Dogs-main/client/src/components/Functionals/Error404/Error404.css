@@ -11,8 +11,22 @@
   font-weight: 800;
   color: rgb(248, 196, 98);
   font-size: 11vh;
+  text-shadow: 1px 1px 2px black;
 }
-
+.getback {
+  display: flex;
+  width: fit-content;
+  align-self: center;
+  background-color: rgb(248, 196, 98);
+  border-radius: 10px;
+  font-size: 4vh;
+  padding: 2vh;
+  color: green;
+}
+.getback:hover {
+  color: red;
+  transform: scale(105%);
+}
 @media (min-width: 250px) and (max-width: 650px) {
   .container2 {
     font-size: 6vh;

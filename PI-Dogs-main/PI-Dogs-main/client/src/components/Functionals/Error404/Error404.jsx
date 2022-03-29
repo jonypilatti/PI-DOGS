@@ -11,7 +11,12 @@ const Error404 = () => {
         <div>
           <p>SOMETHING WENT INCREDIBLY AWFULLY WRONG!</p>
         </div>
-        <button onClick={() => window.location.replace("/home")}></button>
+        <button
+          className="getback"
+          onClick={() => window.location.replace("/home")}
+        >
+          GET BACK TO HOME
+        </button>
       </div>
     </>
   );

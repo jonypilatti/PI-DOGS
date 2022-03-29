@@ -2,7 +2,7 @@
 const { expect } = require("chai");
 const session = require("supertest-session");
 const app = require("../../src/app.js");
-const { Dog, Temperaments, conn } = require("../../src/db.js");
+const { Dog, Temperament, conn } = require("../../src/db.js");
 
 const agent = session(app);
 const dog = {
@@ -11,7 +11,7 @@ const dog = {
   height: "4-20",
   createdByDB: true,
 };
-const temperament = {};
+const temperament = { name: "Aloof" };
 
 describe("Dogs routes", () => {
   before(async () =>
@@ -21,7 +21,7 @@ describe("Dogs routes", () => {
   );
   beforeEach(() => Dog.sync({ force: true }).then(() => Dog.create(dog)));
   describe("GET /dogs", () => {
-    it("should get 200", () => agent.get("/dogs").expect(200)).timeout(100000);
+    it("should get 200", () => agent.get("/dogs").expect(200)).timeout(10000);
   });
 });
 describe("Temperament routes", () => {
@@ -36,6 +36,8 @@ describe("Temperament routes", () => {
     )
   );
   describe("GET /temperament", () => {
-    it("should get 200", () => agent.get("/dogs").expect(200)).timeout(100000);
+    it("should get 200", () => agent.get("/temperament").expect(200)).timeout(
+      5000
+    );
   });
 });

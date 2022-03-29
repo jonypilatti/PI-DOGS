@@ -28,7 +28,7 @@ const Home = () => {
   // eslint-disable-next-line no-unused-vars
   const [DogsPerPage, setDogsPerPage] = useState(8);
   const TotalPages = Math.ceil(allDogs.length / DogsPerPage);
-
+  //-------------------PAGINADO------------------//
   const paginaSig = () => {
     setCurrentPage(CurrentPage + 1);
   };
@@ -41,10 +41,14 @@ const Home = () => {
   const lastPage = () => {
     setCurrentPage(TotalPages);
   };
+  //------------------PAGINADO-------------------//
+  //-------------------------INDICES----------------------
   const IndexOfLastDog = CurrentPage * DogsPerPage;
   const IndexOfFirstDog = IndexOfLastDog - DogsPerPage;
   const CurrentDogs = allDogs.slice(IndexOfFirstDog, IndexOfLastDog);
+  //--------------------------INDICES------------------------
   let actualorderFilter = useSelector((state) => state.orderFilter);
+  //--------------------FILTRAR POR TEMPERAMENTO------------------//
   function Filtersbytemp(e) {
     e.preventDefault();
     dispatch(FilterCreated(actualorderFilter.FilterApiDB));
@@ -52,6 +56,9 @@ const Home = () => {
     dispatch(Order(actualorderFilter.order));
     setCurrentPage(1);
   }
+  //--------------------FILTRAR POR TEMPERAMENTO--------------------//
+
+  //---------------------FILTRAR POR DB----------------------//
   function FiltersCreated(e) {
     e.preventDefault();
     dispatch(FilterCreated(e.target.value));
@@ -59,11 +66,14 @@ const Home = () => {
     dispatch(Order(actualorderFilter.order));
     setCurrentPage(1);
   }
+  //----------------------FILTRAR POR DB----------------------//
+  //-----------------------ORDENADO--------------------//
   function Orders(e) {
     e.preventDefault();
     dispatch(Order(e.target.value));
     setCurrentPage(1);
   }
+  //-----------------------ORDENADO---------------------//
   return (
     <>
       <div className="container">
