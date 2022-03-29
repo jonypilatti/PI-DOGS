@@ -1,0 +1,346 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 900;
+  background-image: url("../../../img/FONDOHOME.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  color: rgb(248, 196, 98);
+  text-shadow: 1px 1px 4px black;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px rgb(97, 95, 95) outset;
+  width: 35%;
+  align-self: center;
+  gap: 3px;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  backdrop-filter: blur(4px);
+  color: rgb(248, 196, 98);
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+.inputs input {
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px black;
+  outline: none;
+  text-align: center;
+}
+
+.inputs select {
+  background-color: rgb(70, 63, 63);
+  font-size: 15px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  border-radius: 2vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.form button {
+  width: 40%;
+  align-self: center;
+  margin-top: 4px;
+}
+.temperament {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+  backdrop-filter: blur(4px);
+  margin-bottom: 3vh;
+  justify-content: center;
+  align-self: center;
+}
+.temperament button {
+  cursor: pointer;
+}
+.rowtemps {
+  display: flex;
+  flex-direction: row;
+  gap: 2vh;
+  padding: 3vh;
+  background-color: rgba(2, 2, 2, 0.405);
+  color: rgb(248, 196, 98);
+  align-items: center;
+}
+.rowtemps button {
+  background-color: rgba(228, 138, 78, 0.94);
+  color: white;
+  padding: 5px;
+  border-radius: 100%;
+  border: none;
+  width: 4vh;
+  height: 4vh;
+  transition: 0.5s;
+}
+.rowtemps button:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  color: red;
+  background-color: rgba(187, 126, 85, 0.94);
+}
+.Filler {
+  height: 8vh;
+}
+#Create {
+  background-color: rgba(228, 138, 78, 0.94);
+  color: rgba(255, 255, 255, 0.864);
+  padding: 5px;
+  border-radius: 60%;
+  border: none;
+  transition: 0.5s;
+  font-size: medium;
+  font-weight: 500;
+  color: rgb(248, 196, 98);
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+}
+
+@media (max-width: 300px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    background-image: url("../../../img/FONDOHOME.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    color: rgb(248, 196, 98);
+    text-shadow: 1px 1px 4px black;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px rgb(97, 95, 95) outset;
+    width: 80%;
+    align-self: center;
+    gap: 3px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    backdrop-filter: blur(4px);
+    color: rgb(248, 196, 98);
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+  }
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.5vh;
+    padding-right: 2vh;
+  }
+  .inputs input {
+    background-color: transparent;
+    font-size: 8.2px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    outline: none;
+    text-align: center;
+    height: 24px;
+  }
+
+  .inputs select {
+    background-color: rgb(70, 63, 63);
+    font-size: 8px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 2vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .form button {
+    width: 40%;
+    align-self: center;
+    margin-top: 4px;
+  }
+  .temperament {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+    backdrop-filter: blur(4px);
+    margin-bottom: 3vh;
+    justify-content: center;
+    align-self: center;
+  }
+  .rowtemps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0vh;
+    background-color: rgba(2, 2, 2, 0.405);
+    color: rgb(248, 196, 98);
+    align-items: center;
+    margin: 1px;
+    font-size: 8px;
+  }
+  .rowtemps button {
+    background-color: rgba(228, 138, 78, 0.94);
+    color: white;
+    padding: 0px;
+    border-radius: 100%;
+    border: none;
+    width: 2vh;
+    height: 2vh;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 300px) and (max-width: 650px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px rgb(97, 95, 95) outset;
+    width: 80%;
+    align-self: center;
+    gap: 3px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    backdrop-filter: blur(4px);
+    color: rgb(248, 196, 98);
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+  }
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.5vh;
+    padding-right: 2vh;
+  }
+  .inputs input {
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    outline: none;
+    text-align: center;
+  }
+
+  .inputs select {
+    background-color: rgb(70, 63, 63);
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 2vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .rowtemps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0vh;
+    background-color: rgba(2, 2, 2, 0.405);
+    color: rgb(248, 196, 98);
+    align-items: center;
+    margin: 1px;
+    font-size: 10px;
+  }
+  .rowtemps button {
+    background-color: rgba(228, 138, 78, 0.94);
+    color: white;
+    padding: 0px;
+    border-radius: 100%;
+    border: none;
+    width: 3vh;
+    height: 3vh;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 650px) and (max-width: 1000px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px rgb(97, 95, 95) outset;
+    width: 80%;
+    align-self: center;
+    gap: 3px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    backdrop-filter: blur(4px);
+    color: rgb(248, 196, 98);
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+  }
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.5vh;
+    padding-right: 2vh;
+  }
+  .inputs input {
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    outline: none;
+    text-align: center;
+  }
+
+  .inputs select {
+    background-color: rgb(70, 63, 63);
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 2vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .rowtemps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0vh;
+    background-color: rgba(2, 2, 2, 0.405);
+    color: rgb(248, 196, 98);
+    align-items: center;
+    margin: 1px;
+    font-size: 20px;
+  }
+  .rowtemps button {
+    background-color: rgba(228, 138, 78, 0.94);
+    color: white;
+    padding: 0px;
+    border-radius: 100%;
+    border: none;
+    width: 3vh;
+    height: 3vh;
+    transition: 0.5s;
+  }
+}

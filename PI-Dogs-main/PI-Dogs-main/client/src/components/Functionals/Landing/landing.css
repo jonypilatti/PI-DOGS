@@ -1,0 +1,77 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../../img/FONDOHOME.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.positioning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  width: 90vh;
+  align-self: center;
+  backdrop-filter: blur(2.5px);
+}
+.title {
+  font-size: 8vh;
+  color: rgba(240, 194, 109, 0.946);
+  margin: 3vh;
+  text-shadow: 5px 2px 5px black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.subtitle {
+  font-size: 4vh;
+  color: rgba(240, 194, 109, 0.946);
+  margin: 3vh;
+  text-shadow: 5px 2px 5px black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.botoncitoo {
+  margin-top: 18vh;
+  border-radius: 15px;
+  font-size: 5vh;
+  background-image: url("../../../img/PAW-ICON.jpg");
+  background-size: contain;
+  font-weight: 700;
+  transition: 0.5s;
+  color: rgb(70, 4, 4);
+  border: 2px solid black;
+  text-shadow: 1px 1px 4px black;
+  box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+}
+
+.botoncitoo:hover {
+  cursor: pointer;
+  transform: scale(120%);
+  color: darkred;
+  transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 4vh;
+    align-self: center;
+    width: 30%;
+  }
+  .subtitle {
+    align-self: center;
+    font-size: 3vh;
+    width: 30%;
+  }
+}
+@media (max-width: 950px) {
+  .title {
+    font-size: 4.2vh;
+  }
+  .subtitle {
+    font-size: 3.4vh;
+    width: 35%;
+    align-self: center;
+  }
+}

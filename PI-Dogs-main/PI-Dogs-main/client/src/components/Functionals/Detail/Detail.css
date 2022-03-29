@@ -1,0 +1,59 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 900;
+  background-image: url("../../../img/FONDOHOME.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  align-items: center;
+}
+.detail2 {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  color: rgb(248, 196, 98);
+  text-shadow: 1px 1px 4px black;
+  box-shadow: 0px 0px 25px 19px rgba(4, 4, 0, 0.364);
+  backdrop-filter: blur(3px);
+  margin-left: 3vh;
+  margin-right: 3vh;
+  margin-top: 3vh;
+  padding: 5vh;
+  margin-bottom: 10vh;
+  transition: 0.5s;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.detail2 img {
+  width: 45vh;
+  height: 40vh;
+}
+.detail2:hover {
+  cursor: pointer;
+  border: 2px solid red;
+  transform: scale(105%);
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  float: top;
+  margin-bottom: 40vh;
+  transition: 0.5s;
+}

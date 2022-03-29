@@ -1,0 +1,110 @@
+.paginado {
+  display: flex;
+  align-items: normal;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.botoncito {
+  cursor: pointer;
+  list-style: none;
+  width: 15vh;
+  height: 15vh;
+  padding: 2vh;
+  border-radius: 60%;
+  color: rgb(75, 11, 11);
+  font-weight: 750;
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+  font-size: 3vh;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 3vh;
+  opacity: 1;
+  background-image: url("../../../img/PAW-ICON.jpg");
+  background-size: cover;
+  transition: 0.5s;
+  text-shadow: 1px 1px 2px black;
+}
+.botoncito:hover {
+  transition: 0.5s;
+  color: rgb(255, 102, 0);
+  transform: scale(120%);
+  text-shadow: 1px 1px 5px black;
+}
+
+@media (max-width: 300px) {
+  .botoncito {
+    cursor: pointer;
+    list-style: none;
+    width: 7vh;
+    height: 7vh;
+    padding: 1vh;
+    border-radius: 60%;
+    color: rgb(75, 11, 11);
+    font-weight: 750;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    font-size: 2vh;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 2vh;
+    opacity: 1;
+    background-image: url("../../../img/PAW-ICON.jpg");
+    background-size: cover;
+    transition: 0.5s;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+@media (min-width: 300px) and (max-width: 570px) {
+  .botoncito {
+    cursor: pointer;
+    list-style: none;
+    width: 10vh;
+    height: 10vh;
+    padding: 2vh;
+    border-radius: 60%;
+    color: rgb(75, 11, 11);
+    font-weight: 750;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    font-size: 2vh;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 1vh;
+    opacity: 1;
+    background-image: url("../../../img/PAW-ICON.jpg");
+    background-size: cover;
+    transition: 0.5s;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+@media (min-width: 570px) and (max-width: 920px) {
+  .botoncito {
+    cursor: pointer;
+    list-style: none;
+    width: 10vh;
+    height: 10vh;
+    padding: 2vh;
+    border-radius: 60%;
+    color: rgb(75, 11, 11);
+    font-weight: 750;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    font-size: 2vh;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 1vh;
+    opacity: 1;
+    background-image: url("../../../img/PAW-ICON.jpg");
+    background-size: cover;
+    transition: 0.5s;
+    text-shadow: 1px 1px 2px black;
+  }
+}

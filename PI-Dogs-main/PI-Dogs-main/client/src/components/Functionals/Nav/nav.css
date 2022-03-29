@@ -1,0 +1,28 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 10vh;
+  height: 12vh;
+  width: 100%;
+  opacity: 45%;
+  text-shadow: 1px 1px 5px black;
+  filter: brightness(2);
+}
+.letters {
+  cursor: pointer;
+  color: rgb(75, 11, 11);
+  font-size: 50px;
+}
+.letters:hover {
+  transform: scale(135%);
+  color: red;
+  transition: 0.5s;
+  text-shadow: 1px 1px 20px black;
+}
+@media (max-width: 570px) {
+  .letters {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,135 @@
+.search input[type="search"] {
+  width: 75vh;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.search {
+  display: flex;
+  float: right;
+  margin: 4px;
+  gap: 4vh;
+}
+.search::placeholder {
+  text-align: center;
+}
+.search button {
+  background-image: url("../../../img/PAW-ICON.jpg");
+  background-size: contain;
+  border-radius: 30%;
+  float: right;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: rgb(75, 11, 11);
+  transition: 0.5s;
+  text-shadow: 1px 1px 2.5px black;
+}
+.search button:hover {
+  transform: scale(117%);
+  color: rgb(255, 102, 0);
+  font-weight: 770;
+  transition: 0.5s;
+}
+.search input[type="search"]:hover {
+  transform: scale(108%);
+  transition: 0.5s;
+}
+@media (max-width: 300px) {
+  .search {
+    display: flex;
+    flex-direction: row;
+  }
+  .search input[type="search"] {
+    width: 15vh;
+    height: 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-left: 23px;
+    margin-right: 1px;
+  }
+  .search button {
+    background-image: url("../../../img/PAW-ICON.jpg");
+    background-size: contain;
+    border-radius: 30%;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: rgb(75, 11, 11);
+    transition: 0.5s;
+    text-shadow: 1px 1px 2.5px black;
+    position: sticky;
+    right: 12px;
+  }
+}
+
+@media (max-width: 570px) and (min-width: 300px) {
+  .search {
+    display: flex;
+    flex-direction: row;
+  }
+  .search input[type="search"] {
+    width: 22vh;
+    height: 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 1px;
+  }
+  .search button {
+    background-image: url("../../../img/PAW-ICON.jpg");
+    background-size: contain;
+    border-radius: 30%;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: rgb(75, 11, 11);
+    transition: 0.5s;
+    text-shadow: 1px 1px 2.5px black;
+    position: sticky;
+    right: 10px;
+  }
+}
+@media (min-width: 570px) {
+  .search {
+    display: flex;
+    flex-direction: row;
+  }
+  .search input[type="search"] {
+    width: 30vh;
+    height: 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    text-align: center;
+    gap: 2px;
+    margin-left: 10px;
+  }
+  .search button {
+    background-image: url("../../../img/PAW-ICON.jpg");
+    background-size: contain;
+    border-radius: 30%;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: rgb(75, 11, 11);
+    transition: 0.5s;
+    text-shadow: 1px 1px 2.5px black;
+    position: sticky;
+    right: 10px;
+  }
+}
