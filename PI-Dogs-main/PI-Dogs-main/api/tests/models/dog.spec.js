@@ -20,7 +20,7 @@ describe("Validators", () => {
       Dog.create({ name: "Pug" });
     });
     it("Should not be created without all fields completed", (done) => {
-      Dog.create({ height: "4-25", weight: "4-23" })
+      Dog.create({ height: "4-25", weight: "4-23", image: "xd" })
         .then(() => done("Error, some are fields incomplete!"))
         .catch(() => done());
     });

@@ -115,7 +115,6 @@ function RootReducer(state = initialState, action) {
           order: order,
         },
       };
-
     default:
       return state;
   }

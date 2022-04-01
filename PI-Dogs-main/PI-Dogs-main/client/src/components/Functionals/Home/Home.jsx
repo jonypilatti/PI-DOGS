@@ -29,6 +29,7 @@ const Home = () => {
   const [DogsPerPage, setDogsPerPage] = useState(8);
   const TotalPages = Math.ceil(allDogs.length / DogsPerPage);
   //-------------------PAGINADO------------------//
+
   const paginaSig = () => {
     setCurrentPage(CurrentPage + 1);
   };

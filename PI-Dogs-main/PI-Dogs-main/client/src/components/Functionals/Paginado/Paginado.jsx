@@ -32,6 +32,7 @@ const Paginado = ({
       <button class="botoncito" onClick={lastPage}>
         Last Page
       </button>
+      ))
     </nav>
   );
 };

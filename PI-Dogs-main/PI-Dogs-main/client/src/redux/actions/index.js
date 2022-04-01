@@ -1,4 +1,5 @@
 //PREGUNTAR SI ES IGUAL CON FETCH
+
 export function getDogs() {
   return async function (dispatch) {
     await fetch("http://localhost:3001/dogs")

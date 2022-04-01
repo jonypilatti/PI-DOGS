@@ -19,7 +19,7 @@ test("renders Enter here!", () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-describe("xdform1", () => {
+describe("The form should have a name", () => {
   beforeEach(() => {
     render(
       <Provider store={store}>

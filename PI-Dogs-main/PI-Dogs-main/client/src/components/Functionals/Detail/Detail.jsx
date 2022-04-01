@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import Nav from "../Nav/nav.jsx";
 import gif from "../../../img/GIFCARGA.gif";
 import "./Detail.css";
@@ -15,6 +15,7 @@ const Detail = () => {
         window.location.replace("/*");
       });
   }, []);
+  const dispatch = useDispatch();
 
   return (
     <>

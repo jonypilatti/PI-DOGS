@@ -9,6 +9,7 @@ import validate from "../Validation/Validate.js";
 const Createdog = () => {
   const navigate = useNavigate();
   const [errors, setErrors] = useState({});
+  const dogs = useSelector((state) => state.Dogs);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -35,9 +36,13 @@ const Createdog = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(postDog(input));
-    alert("Tu perro fue creado satisfactoriamente!");
-    navigate("/home");
+    if (dogs.find((el) => el.name.toLowerCase() == input.name.toLowerCase())) {
+      alert("There's already a dog with that name!");
+    } else {
+      dispatch(postDog(input));
+      alert("Your dog was created succesfully!");
+      navigate("/home");
+    }
   };
   //el handleChange es el que añade el valor del input al estado que estoy por enviar a store por form. tambien tiene la funcion setErrors que es lo que valida.
 
@@ -118,7 +123,7 @@ const Createdog = () => {
           <label>Image:</label>
           <input
             type="text"
-            value={input.image.url}
+            value={input.image?.url}
             name="image"
             autocomplete="off"
             onChange={(e) =>
@@ -136,7 +141,7 @@ const Createdog = () => {
           <label>Temperament:</label>
           <select
             onChange={
-              input.temperament.length < 6 ? handleSelect : console.log("ashe")
+              input.temperament.length < 6 ? handleSelect : console.log("error")
             }
           >
             {temperaments.map((temp) => (
