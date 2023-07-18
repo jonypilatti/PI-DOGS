@@ -10,13 +10,12 @@ const Card = ({ name, weight, image, temperament }) => {
   }
   return (
     <>
-      <div className="Card">
+      <div className="card">
         <img
           src={image}
           onError={({ currentTarget }) => {
             currentTarget.onerror = null; // esto evita que loopee o sea en error no hace nada y setea el src a la img que quiero
-            currentTarget.src =
-              "https://cdn.com.do/wp-content/uploads/2016/08/PERRO-CHINA.jpg";
+            currentTarget.src = "https://cdn.com.do/wp-content/uploads/2016/08/PERRO-CHINA.jpg";
           }}
           alt="HOLA"
           width="175vh"
@@ -27,9 +26,7 @@ const Card = ({ name, weight, image, temperament }) => {
         <div>Weight: {`${weight} KG`}</div>
         <div>
           Temperament:
-          {temperament
-            ? temperament.map((el) => el.name)
-            : " No temperaments found."}
+          {temperament ? temperament.map((el) => el.name) : " No temperaments found."}
         </div>
       </div>
     </>

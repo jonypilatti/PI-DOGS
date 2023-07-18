@@ -13,9 +13,7 @@ const Searchbar = () => {
     setInput(e.target.value);
   }
   function handleSubmit(e) {
-    let nodogs = name.find(
-      (el) => el.name?.toLowerCase() === input.trim()?.toLowerCase()
-    );
+    let nodogs = name.find((el) => el.name?.toLowerCase() === input.trim()?.toLowerCase());
     if (input.trim().length === 0) {
       setInput("");
       return alert("Blank spaces are not allowed in the searchbar");
@@ -34,9 +32,9 @@ const Searchbar = () => {
 
   return (
     <>
-      <div class="search">
+      <div className="search">
         <input
-          class="search"
+          className="search"
           type="search"
           placeholder="Look for a dog breed!"
           value={input}

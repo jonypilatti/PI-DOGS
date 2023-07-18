@@ -1,5 +1,5 @@
 .search input[type="search"] {
-  width: 75vh;
+  width: auto;
   height: 30px;
   border-radius: 25px;
   border: none;
@@ -45,7 +45,8 @@
     flex-direction: row;
   }
   .search input[type="search"] {
-    width: 15vh;
+    width: auto;
+    margin-left: 15px;
     height: 20px;
     border-radius: 25px;
     border: none;
@@ -77,7 +78,7 @@
     flex-direction: row;
   }
   .search input[type="search"] {
-    width: 22vh;
+    width: auto;
     height: 20px;
     border-radius: 25px;
     border: none;

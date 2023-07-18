@@ -93,7 +93,6 @@
   transition: 0.5s;
 }
 .rowtemps button:hover {
-  transform: scale(1.2);
   transition: 0.5s;
   color: red;
   background-color: rgba(187, 126, 85, 0.94);

@@ -16,7 +16,6 @@
   font-size: 50px;
 }
 .letters:hover {
-  transform: scale(135%);
   color: red;
   transition: 0.5s;
   text-shadow: 1px 1px 20px black;
@@ -24,5 +23,10 @@
 @media (max-width: 570px) {
   .letters {
     font-size: 30px;
+  }
+}
+@media (max-width: 300px) {
+  .letters {
+    font-size: 28px;
   }
 }

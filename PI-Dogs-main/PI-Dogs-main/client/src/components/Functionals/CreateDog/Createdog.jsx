@@ -134,16 +134,10 @@ const Createdog = () => {
             }
           ></input>
         </div>
-        <p>
-          Insert a valid URL image or you will be assigned one automatically.
-        </p>
+        <p>Insert a valid URL image or you will be assigned one automatically.</p>
         <div className="inputs">
           <label>Temperament:</label>
-          <select
-            onChange={
-              input.temperament.length < 6 ? handleSelect : console.log("error")
-            }
-          >
+          <select onChange={input.temperament.length < 6 ? handleSelect : console.log("error")}>
             {temperaments.map((temp) => (
               <option value={temp.name}>{temp.name}</option>
             ))}
@@ -156,7 +150,7 @@ const Createdog = () => {
       </form>
       <div className="temperament">
         {input.temperament?.map((el) => (
-          <div class="rowtemps">
+          <div className="rowtemps">
             <p>{el}</p>
             <button onClick={() => handleDelete(el)}>X</button>
           </div>
