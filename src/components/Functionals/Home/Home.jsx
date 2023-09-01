@@ -104,7 +104,7 @@ const Home = () => {
           </div>
           <Searchbar></Searchbar>
         </div>
-        {CurrentDogs?.length == 0 && orderFilter !== "created" ? (
+        {CurrentDogs?.length === 0 && orderFilter !== "created" ? (
           <div className="loading">
             LOADING...
             <img src={gif} alt="SE PUDRIO EL SOQUE" height="350" width="350"></img>
@@ -130,7 +130,7 @@ const Home = () => {
                   className="loading2"
                   style={
                     // eslint-disable-next-line eqeqeq
-                    orderFilter == "created" && CurrentDogs.length == 0 ? { display: "block" } : { display: "none" }
+                    orderFilter === "created" && CurrentDogs.length === 0 ? { display: "block" } : { display: "none" }
                   }
                 >
                   <p>NO DOGS WERE FOUND</p>

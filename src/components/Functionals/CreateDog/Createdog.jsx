@@ -36,7 +36,7 @@ const Createdog = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (dogs.find((el) => el.name.toLowerCase() == input.name.toLowerCase())) {
+    if (dogs.find((el) => el.name.toLowerCase() === input.name.toLowerCase())) {
       alert("There's already a dog with that name!");
     } else {
       dispatch(postDog(input));

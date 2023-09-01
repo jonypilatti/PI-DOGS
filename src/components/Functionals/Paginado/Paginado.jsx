@@ -7,10 +7,10 @@ const Paginado = ({ DogsPerPage, allDogs, paginaSig, paginaPrev, CurrentPage, fi
       <button className="botoncito" onClick={firstPage}>
         First Page
       </button>
-      <button disabled={CurrentPage == 1} className="botoncito" onClick={paginaPrev}>
+      <button disabled={CurrentPage === 1} className="botoncito" onClick={paginaPrev}>
         PREV
       </button>
-      <button className="botoncito" disabled={CurrentPage == Math.ceil(allDogs / DogsPerPage)} onClick={paginaSig}>
+      <button className="botoncito" disabled={CurrentPage === Math.ceil(allDogs / DogsPerPage)} onClick={paginaSig}>
         NEXT
       </button>
       <button className="botoncito" onClick={lastPage}>
