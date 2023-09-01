@@ -6,13 +6,12 @@
 
 .container {
   display: flex;
+  padding: 0;
   flex-direction: column;
   justify-content: space-evenly;
   background-image: url("../../../img/FONDOHOME.jpg");
   background-size: cover;
   font-weight: 900;
-  position: fixed;
-  overflow-y: scroll;
   width: 100%;
   height: 100%;
 }
